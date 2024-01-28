@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- CA1034: Nested types should not be visible -->
+    <!-- CA1040: Avoid empty interfaces -->
+    <!-- CA1720: Identifiers should not contain type names -->
+    <NoWarn>$(NoWarn);CA1034;CA1040;CA1720</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClangSharp.Interop\ClangSharp.Interop.csproj" />
+  </ItemGroup>
+
+</Project>
